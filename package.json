@@ -1,0 +1,44 @@
+{
+  "name": "ikas-sample-app-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ikas/api-client": "^1.0.4-alpha.4",
+    "@ikas/app-helpers": "^1.0.1-alpha.12",
+    "ioredis": "^4.28.5",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "next": "12.1.0",
+    "next-connect": "^0.12.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.49.9",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/ioredis": "^4.28.8",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^17.0.21",
+    "@types/react": "17.0.39",
+    "@types/uuid": "^8.3.4",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "prettier": "^2.5.1",
+    "typescript": "4.6.2"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 150,
+    "tabWidth": 2,
+    "bracketSpacing": true
+  }
+}

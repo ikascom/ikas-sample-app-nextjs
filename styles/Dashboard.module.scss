@@ -1,0 +1,167 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  padding-top: 10vh;
+
+  .container {
+    width: 100%;
+    max-width: 900px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 32px;
+      color: var(--color-grey)
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      width: 100%;
+      margin: 32px 0 16px;
+      border-radius: 4px;
+      padding: 8px 16px;
+      background-color: var(--color-bg);
+
+      a {
+        font-size: 14px;
+        font-weight: normal;
+        color: var(--color-purple);
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+
+    .productLine {
+      width: 100%;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--color-bg);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-bg)
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+
+      button {
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+        color: var(--color-purple);
+        padding: 8px 16px;
+        margin-right: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+        font-weight: 500;
+        transition: 0.3s opacity;
+
+        &:hover {
+          background-color: var(--color-bg)
+        }
+
+        &:disabled {
+          pointer-events: none;
+          opacity: .4;
+        }
+      }
+    }
+  }
+
+  .modalContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#131318, .7);
+    animation: fadeInAnimation ease .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .modal {
+      border-radius: 8px;
+      background-color: white;
+      min-width: 600px;
+
+      .modalTitle {
+        font-weight: 500;
+        font-size: 18px;
+        padding: 24px;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .modalBody {
+        padding: 16px;
+
+        .inputLine {
+          width: 100%;
+          padding: 8px;
+
+          .label {
+            color: var(--color-grey);
+            padding-bottom: 4px;
+          }
+
+          input {
+            width: 100%;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            height: 40px;
+            padding: 8px 12px;
+          }
+        }
+
+        button {
+          margin: 8px;
+          color: white;
+          background-color: var(--color-purple);
+          border: none;
+          padding: 10px 24px;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &.ghostButton {
+            font-weight: 500;
+            padding: 10px 12px;
+            background-color: transparent;
+            color: var(--color-purple);
+          }
+
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+}
+
+
