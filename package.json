@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ikas/api-client": "^1.0.4-alpha.4",
-    "@ikas/app-helpers": "^1.0.1-alpha.12",
+    "@ikas/api-client": "^1.0.4",
+    "@ikas/app-helpers": "^1.0.1",
     "ioredis": "^4.28.5",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
