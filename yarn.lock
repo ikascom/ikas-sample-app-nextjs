@@ -46,20 +46,20 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@ikas/api-client@^1.0.4-alpha.4":
-  version "1.0.4-alpha.4"
-  resolved "https://registry.yarnpkg.com/@ikas/api-client/-/api-client-1.0.4-alpha.4.tgz#7a3532d0da5f15716f57e6a04048d61061ac8723"
-  integrity sha512-rnfuaE40G8rkOfM1hUO+8//cN5PXCAVC5CQ4PgDRhaMKE5K4HxkugGktQvK2kPOkGwdU3viv+/mhjnsEtA2UpA==
+"@ikas/api-client@^1.0.4":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@ikas/api-client/-/api-client-1.0.5.tgz#c84119e4c5eb0541d315194e86d733d865df5ff0"
+  integrity sha512-yIvKjduSznGGyEgD5ujMcbY3HCGl1S+VUTVxuem0Asis2uhIUG1G8zpFD9Y218/Qq5TpuSu6ryNTyRaYef1C8Q==
   dependencies:
     axios "^0.24.0"
     graphql "^16.0.1"
     graphql-request "^3.6.1"
     qs "^6.10.1"
 
-"@ikas/app-helpers@^1.0.1-alpha.12":
-  version "1.0.1-alpha.12"
-  resolved "https://registry.yarnpkg.com/@ikas/app-helpers/-/app-helpers-1.0.1-alpha.12.tgz#539d860bb43ddf2896fc4fbdaa209129dfc6cb2e"
-  integrity sha512-zZV1na3hqLKgH+0nCQqDIhuUZ1qECtajq8RcV/4vaZIQXdf2GcrssY4Fmn98c4WGL3zxGMnsKo8CJAEawwXrJA==
+"@ikas/app-helpers@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@ikas/app-helpers/-/app-helpers-1.0.1.tgz#9b591dc91f9f4bfc3df4f1ee4603282357ce04e7"
+  integrity sha512-jq06fMKpAeTTZ50RsrBhMjAoGxxDo6lYbIDmT1Ef9nnn7wwzw2/Ap1dT73W+HkJDN/HRNnQUPFevGFPwvM1PPw==
 
 "@next/env@12.1.0":
   version "12.1.0"
