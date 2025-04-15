@@ -18,7 +18,7 @@
 
     .title {
       font-size: 32px;
-      color: var(--color-grey)
+      color: var(--color-grey);
     }
 
     .header {
@@ -48,7 +48,7 @@
       cursor: pointer;
 
       &:hover {
-        background-color: var(--color-bg)
+        background-color: var(--color-bg);
       }
     }
 
@@ -72,12 +72,12 @@
         transition: 0.3s opacity;
 
         &:hover {
-          background-color: var(--color-bg)
+          background-color: var(--color-bg);
         }
 
         &:disabled {
           pointer-events: none;
-          opacity: .4;
+          opacity: 0.4;
         }
       }
     }
@@ -92,8 +92,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(#131318, .7);
-    animation: fadeInAnimation ease .3s;
+    background-color: rgba(#131318, 0.7);
+    animation: fadeInAnimation ease 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -156,12 +156,10 @@
           }
 
           &:hover {
-            opacity: .7;
+            opacity: 0.7;
           }
         }
       }
     }
   }
 }
-
-

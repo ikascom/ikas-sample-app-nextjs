@@ -1,8 +1,10 @@
-import type { NextPage } from 'next';
-import styles from '../styles/AuthorizeStore.module.scss';
-import { useEffect, useState } from 'react';
+'use client';
 
-const AuthorizeStore: NextPage = () => {
+import { useState, useEffect } from 'react';
+import styles from './page.module.scss';
+import Image from 'next/image';
+
+export default function AuthorizeStore() {
   const [storeName, setStoreName] = useState<string | null>(null);
   const [showError, setShowError] = useState<boolean>(false);
 
@@ -19,7 +21,7 @@ const AuthorizeStore: NextPage = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <img className={styles.logo} src="/logo.png" alt="ikas Logo" />
+        <Image className={styles.logo} src="/logo.png" alt="ikas Logo" width={200} height={50} loading="eager" />
         <form method={'GET'} action={'/api/oauth/authorize'}>
           <input
             name={'storeName'}
@@ -36,6 +38,4 @@ const AuthorizeStore: NextPage = () => {
       </div>
     </main>
   );
-};
-
-export default AuthorizeStore;
+}

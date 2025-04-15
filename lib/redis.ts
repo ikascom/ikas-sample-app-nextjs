@@ -20,7 +20,6 @@ class RedisOps<T extends string | object> {
   }
 
   async set(key: string, val: T, ttlSeconds?: number) {
-    // @ts-ignore
     const valStr = this.isObjectType ? JSON.stringify(val) : (val as string);
 
     if (ttlSeconds) await redis.set(this.getKey(key), valStr, 'EX', ttlSeconds);

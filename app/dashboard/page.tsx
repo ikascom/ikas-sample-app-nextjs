@@ -1,7 +1,6 @@
-import type { NextPage } from 'next';
-import styles from '../styles/Dashboard.module.scss';
+import styles from './page.module.scss';
 
-const Home: NextPage = () => {
+export default function Dashboard() {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -9,6 +8,4 @@ const Home: NextPage = () => {
       </div>
     </main>
   );
-};
-
-export default Home;
+}
