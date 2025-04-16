@@ -1,0 +1,28 @@
+:root {
+  --color-purple: #6f55ff;
+  --color-border: #e3e7ef;
+  --color-black: #131318;
+  --color-grey: #7e838f;
+  --color-disabled: #adb5bd;
+  --color-placeholder: #ced4da;
+  --color-bg: #f3f5f9;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--color-black);
+  font-size: 14px;
+  background-color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

@@ -1,5 +1,5 @@
+import { config } from '@/globals/config';
 import { JwtPayload, sign, verify } from 'jsonwebtoken';
-import { config } from '../globals/config';
 import * as uuid from 'uuid';
 
 /**
@@ -15,6 +15,7 @@ export class JwtHelpers {
     try {
       return verify(token, config.appSecret || '', {}) as JwtPayload;
     } catch (e) {
+      console.error(e);
       return;
     }
   }
@@ -22,11 +23,10 @@ export class JwtHelpers {
   /**
    * This api returns new JWT Token that contains same data as ikas created.
    *
-   * @param storeName Slug of ikas store <slug>.myikas.com
    * @param merchantId Id of the merchant's store
    * @param authorizedAppId Id of the app which is unique per store and per installation
    */
-  static createToken(storeName: string, merchantId: string, authorizedAppId: string) {
+  static createToken(merchantId: string, authorizedAppId: string) {
     return sign({}, config.appSecret, {
       expiresIn: '4h', // 4 Hours
       algorithm: 'HS256',
